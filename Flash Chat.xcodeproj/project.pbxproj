@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B10C837C3A1530D32F35FE91 /* Pods_Flash_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4059C08603DB0745742A97F4 /* Pods_Flash_Chat.framework */; };
 		BB28740C26037150005D099A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB28740B26037150005D099A /* Message.swift */; };
-		BB287445260376BA005D099A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB287444260376BA005D099A /* MessageCell.swift */; };
+		BB287445260376BA005D099A /* RecipientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB287444260376BA005D099A /* RecipientCell.swift */; };
 		BB3BF84D2608D7E9007E30AC /* TimeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3BF84C2608D7E9007E30AC /* TimeIndicatorView.swift */; };
 		BB65A672260B01E900198064 /* SubClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A671260B01E900198064 /* SubClasses.swift */; };
 		BB739C3B260A1CDA0025346E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB739C3A260A1CDA0025346E /* GoogleService-Info.plist */; };
 		BB83DD5C260222B100765280 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83DD5B260222B100765280 /* BlockingActivityIndicator.swift */; };
 		BB83DDA8260236DB00765280 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB83DDA7260236DB00765280 /* Constants.swift */; };
 		BB83DDC9260241DC00765280 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBC28CDE25FF8AD6001B9FC8 /* Localizable.strings */; };
+		BB89A9D92622E137007C410D /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB89A9D82622E137007C410D /* headerView.swift */; };
 		BBAF397225D19D4400275025 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF397125D19D4400275025 /* Toast.swift */; };
 		BBB52C8A25A309A4009A08DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB52C8925A309A4009A08DD /* AppDelegate.swift */; };
 		BBB52C9425A309A5009A08DD /* Flash_Chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBB52C9225A309A5009A08DD /* Flash_Chat.xcdatamodeld */; };
@@ -32,6 +33,7 @@
 		BBB52CF125A30ED6009A08DD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB52CF025A30ED6009A08DD /* RegisterViewController.swift */; };
 		BBB52CF625A30EE1009A08DD /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB52CF525A30EE1009A08DD /* ChatViewController.swift */; };
 		BBB52CFF25A31324009A08DD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB52CFE25A31324009A08DD /* Extensions.swift */; };
+		BBE5B5AC261F1EEE00718794 /* SenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE5B5AB261F1EEE00718794 /* SenderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +58,13 @@
 		7004C4A1136E274233DF04DB /* Pods-Flash Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.release.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.release.xcconfig"; sourceTree = "<group>"; };
 		B5E5DF0EC0136A1D6E2CE702 /* Pods-Flash Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flash Chat.debug.xcconfig"; path = "Target Support Files/Pods-Flash Chat/Pods-Flash Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		BB28740B26037150005D099A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		BB287444260376BA005D099A /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BB287444260376BA005D099A /* RecipientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipientCell.swift; sourceTree = "<group>"; };
 		BB3BF84C2608D7E9007E30AC /* TimeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIndicatorView.swift; sourceTree = "<group>"; };
 		BB65A671260B01E900198064 /* SubClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubClasses.swift; sourceTree = "<group>"; };
 		BB739C3A260A1CDA0025346E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB83DD5B260222B100765280 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
 		BB83DDA7260236DB00765280 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB89A9D82622E137007C410D /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		BBAF397125D19D4400275025 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		BBB52C8625A309A4009A08DD /* Flash Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB52C8925A309A4009A08DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +89,7 @@
 		BBB52CFE25A31324009A08DD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BBC28CDD25FF8AD6001B9FC8 /* en */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BBC28CE225FF8ADC001B9FC8 /* sw-KE */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = "sw-KE"; path = "sw-KE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BBE5B5AB261F1EEE00718794 /* SenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +146,8 @@
 		BB287449260376C7005D099A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				BB287444260376BA005D099A /* MessageCell.swift */,
+				BB287444260376BA005D099A /* RecipientCell.swift */,
+				BBE5B5AB261F1EEE00718794 /* SenderCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				BB3BF84C2608D7E9007E30AC /* TimeIndicatorView.swift */,
 				BBAF397125D19D4400275025 /* Toast.swift */,
 				BB287449260376C7005D099A /* Cells */,
+				BB89A9D82622E137007C410D /* headerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -450,7 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBB52CEC25A30ECB009A08DD /* LoginViewController.swift in Sources */,
-				BB287445260376BA005D099A /* MessageCell.swift in Sources */,
+				BB287445260376BA005D099A /* RecipientCell.swift in Sources */,
 				BBAF397225D19D4400275025 /* Toast.swift in Sources */,
 				BBB52CDD25A30EA4009A08DD /* LoginView.swift in Sources */,
 				BB83DD5C260222B100765280 /* BlockingActivityIndicator.swift in Sources */,
@@ -461,8 +467,10 @@
 				BBB52C9425A309A5009A08DD /* Flash_Chat.xcdatamodeld in Sources */,
 				BBB52CD825A30E9A009A08DD /* RegisterView.swift in Sources */,
 				BB65A672260B01E900198064 /* SubClasses.swift in Sources */,
+				BBE5B5AC261F1EEE00718794 /* SenderCell.swift in Sources */,
 				BBB52CE225A30EB1009A08DD /* ChatView.swift in Sources */,
 				BBB52C8A25A309A4009A08DD /* AppDelegate.swift in Sources */,
+				BB89A9D92622E137007C410D /* headerView.swift in Sources */,
 				BB83DDA8260236DB00765280 /* Constants.swift in Sources */,
 				BB28740C26037150005D099A /* Message.swift in Sources */,
 				BBB52CFF25A31324009A08DD /* Extensions.swift in Sources */,

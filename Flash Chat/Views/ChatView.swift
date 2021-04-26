@@ -29,6 +29,7 @@ class ChatView: UIView {
         tv.autoresizingMask = .flexibleHeight
         tv.sizeToFit()
         tv.clipsToBounds = true
+        tv.keyboardDismissMode = .interactive
         tv.translatesAutoresizingMaskIntoConstraints = false
         return tv
     }()

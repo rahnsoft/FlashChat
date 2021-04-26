@@ -19,6 +19,8 @@ var window: UIWindow?
         let nav = UINavigationController(rootViewController: WelcomeViewController())
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
+        UINavigationBar.appearance().barTintColor = UIColor(named: Constants.BrandColors.blue)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: Constants.BrandColors.purple)!]
         FirebaseApp.configure()
         let db = Firestore.firestore()
         print(db)

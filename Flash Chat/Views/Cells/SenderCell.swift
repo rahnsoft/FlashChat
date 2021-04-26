@@ -1,17 +1,18 @@
 //
-//  MessageCell.swift
+//  SenderCell.swift
 //  Flash Chat
 //
-//  Created by IOS DEV PRO 1 on 18/03/2021.
+//  Created by IOS DEV PRO 1 on 08/04/2021.
 //
+
 
 import UIKit
 
-class MessageCell: UITableViewCell {
+class SenderCell: UITableViewCell {
     lazy var messageView: UIView = {
         let v = UIView()
         v.layer.cornerRadius = 15
-        v.backgroundColor = UIColor(named: Constants.BrandColors.purple)
+        v.backgroundColor = UIColor(named: Constants.BrandColors.lightBlue)
         v.translatesAutoresizingMaskIntoConstraints = false
         return v
     }()
@@ -32,7 +33,7 @@ class MessageCell: UITableViewCell {
     
     lazy var avatarImage: UIImageView = {
         let i = UIImageView()
-        i.image = #imageLiteral(resourceName: "MeAvatar")
+        i.image = #imageLiteral(resourceName: "YouAvatar")
         i.translatesAutoresizingMaskIntoConstraints = false
         return i
     }()
@@ -49,20 +50,20 @@ class MessageCell: UITableViewCell {
         messageView.addSubview(label)
         NSLayoutConstraint.activate([
             messageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: Constants.DEFAULT_PADDING),
-            messageView.leadingAnchor.constraint(equalTo: label.leadingAnchor, constant: -Constants.DOUBLE_PADDING),
-            messageView.trailingAnchor.constraint(equalTo: avatarImage.leadingAnchor, constant: -Constants.DEFAULT_PADDING),
+            messageView.trailingAnchor.constraint(equalTo: label.trailingAnchor, constant: Constants.DOUBLE_PADDING),
+            messageView.leadingAnchor.constraint(equalTo: avatarImage.trailingAnchor, constant: -Constants.DEFAULT_PADDING),
             messageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -Constants.DEFAULT_PADDING),
             
             label.topAnchor.constraint(equalTo: messageView.topAnchor, constant: Constants.DEFAULT_PADDING),
             label.widthAnchor.constraint(lessThanOrEqualToConstant: UIScreen.main.bounds.size.width / 1.5),
-            label.trailingAnchor.constraint(equalTo: messageView.trailingAnchor, constant: -Constants.DOUBLE_PADDING),
+            label.leadingAnchor.constraint(equalTo: messageView.leadingAnchor, constant: Constants.DOUBLE_PADDING),
             label.bottomAnchor.constraint(equalTo: messageView.bottomAnchor, constant: -Constants.DEFAULT_PADDING),
             
             avatarImage.topAnchor.constraint(equalTo: messageView.topAnchor),
             avatarImage.widthAnchor.constraint(equalToConstant: 30),
             avatarImage.heightAnchor.constraint(equalToConstant: 30),
-            avatarImage.leadingAnchor.constraint(equalTo: messageView.trailingAnchor, constant: Constants.DEFAULT_PADDING),
-            avatarImage.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -Constants.DEFAULT_PADDING)
+            avatarImage.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: Constants.DEFAULT_PADDING),
+            avatarImage.trailingAnchor.constraint(equalTo: messageView.leadingAnchor, constant: -Constants.DEFAULT_PADDING)
         ]
         )
     }
